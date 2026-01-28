@@ -1,3 +1,4 @@
+package week1;
 public class Car {
     String brand;
     String engine;
