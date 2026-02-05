@@ -14,11 +14,7 @@ public class Mission {
         String[] targets = {
             "Retrieve stolen data",
             "Infiltrate enemy base",
-            "Rescue hostage",
-            "Disable surveillance system",
-            "Extract undercover agent"
-
-        };
+            "Rescue hostage",};
         this.missionTarget = targets[random.nextInt(targets.length)];
         this.missionDeadline = LocalDate.now().plusDays(random.nextInt(10) + 1);
         this.difficulty = random.nextInt(5) + 1;
@@ -42,7 +38,7 @@ public class Mission {
     }
 
     public void displayMissionBriefing() {
-        System.out.println("--- Mission Briefing ---");
+        System.out.println("   |Mission Briefing|   ");
         System.out.println("Target: " + missionTarget);
         System.out.println("Difficulty Level: " + difficulty);
         System.out.println("Deadline: " + getFormattedDeadline());
