@@ -44,8 +44,8 @@ public class Mission {
     public void displayMissionBriefing() {
         System.out.println("--- Mission Briefing ---");
         System.out.println("Target: " + missionTarget);
-        System.out.println("Deadline: " + getFormattedDeadline());
         System.out.println("Difficulty Level: " + difficulty);
+        System.out.println("Deadline: " + getFormattedDeadline());
 
     }
 }
